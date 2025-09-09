@@ -9,7 +9,8 @@ button {
   font-family: inherit;
   cursor: pointer;
   transition: border-color 0.25s;
-  margin: 10px;  
+  margin: 10px; 
+  width: 200px; 
 }
 .boton:hover {
   border-color: #100101;
