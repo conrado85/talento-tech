@@ -9,7 +9,7 @@ function App() {
       <NavBar  />
       <h1>Talento Tech. </h1>
       <p>Son los primeros pasos en react.</p>
-      <section className="clase1">
+      <section className="clase1" id="clase1">
         <h2>Primera clase</h2>
         <p>Mi primer componente</p>
 
@@ -19,10 +19,18 @@ function App() {
           <Boton texto="Chau" color="red" />
         </div>
         <div className="tarjetas">
-          <Tarjeta imagen={"https://placehold.co/600x400?text=Tarjeta+1"} titulo="Tarjeta 1" contenido="Contenido de la tarjeta 1" />
-          <Tarjeta imagen={"https://placehold.co/600x400?text=Tarjeta+2"} titulo="Tarjeta 2" contenido="Contenido de la tarjeta 2" />
-          <Tarjeta imagen={"https://placehold.co/600x400?text=Tarjeta+3"} titulo="Tarjeta 3" contenido="Contenido de la tarjeta 3" />
+          <Tarjeta imagen={"https://placehold.co/600x400?text=Tarjeta+1"} titulo="Oferta especial " contenido="20% de descuento en todos los productos" textoBoton="Ver más" />
+          <Tarjeta imagen={"https://placehold.co/600x400?text=Tarjeta+2"} titulo="Oferta especial " contenido="20% de descuento en todos los productos" textoBoton="Ver más" />
+          <Tarjeta imagen={"https://placehold.co/600x400?text=Tarjeta+3"} titulo="Oferta especial " contenido="20% de descuento en todos los productos" textoBoton="Ver más" />
         </div>
+      </section>
+      <section className="clase2" id="clase2">
+        <h2>Segunda clase</h2>
+        <p>Mi segundo componente</p>
+      </section>
+      <section className="clase3">
+        <h2>Tercera clase</h2>
+        <p>Mi tercer componente</p>
       </section>
     </div>
   );

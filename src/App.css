@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  padding-top: 60px;
 }
 h1{
   font-size: 2.5rem;
@@ -13,13 +14,14 @@ p{
   color: #333;
 }
 
-.clase1{
+.clase1,.clase2,.clase3{
   background: #797878;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin: 20px;
   width: 90%;
+  padding-top: 60px;
 }
 .botones{
   display: flex;
