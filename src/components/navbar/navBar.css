@@ -3,16 +3,31 @@
   background-color: #222;
   color: #fff;
   padding: 0.75rem 2rem;
-  width: 100%;
-  padding: 3px;
-  margin: 0 ;
+  width: 96%;
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
-  position: fixed; /* Fija el navbar en la parte superior */
-  top: 0; /* Posición en la parte superior */
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+/* Botón hamburguesa */
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  z-index: 1100;
+}
+
+.navbar-toggle-icon {
+  display: block;
 }
 
 /* Logo o título */
@@ -33,7 +48,13 @@
 .navbar-links {
   display: flex;
   gap: 1.5rem;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
 }
+
+.navbar-links.open {
+  display: flex;
+}
+
 
 /* Enlaces */
 .navbar-link {
@@ -46,6 +67,18 @@
 .navbar-link:hover {
   color: #00bcd4;
 }
+/* Botones en el navbar */
+.navbar-buttons {
+  background: #fff;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  border: #00090b solid 2px;
+  border-radius: 5px;
+  padding: 5px; 
+  margin: 5px;
+  width: 100px; 
+} 
 
 /* Responsive */
 @media (max-width: 600px) {
@@ -54,9 +87,21 @@
     align-items: flex-start;
     padding: 1rem;
   }
+  .navbar-toggle {
+    display: block;
+  }
   .navbar-links {
     flex-direction: column;
     gap: 1rem;
     width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+  }
+  .navbar-links.open {
+    max-height: 500px;
+    opacity: 1;
+    margin-top: 10px;
   }
 }

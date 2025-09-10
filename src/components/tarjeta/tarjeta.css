@@ -6,7 +6,7 @@
   padding: 20px;
   margin: 20px;
   width: 20%;
-  height: 400px;
+  height: 30%;
 }
 
 .tarjeta img {
@@ -28,4 +28,5 @@
   margin-top: 10px;
   border-radius: 5px;
   cursor: pointer;
+  width: 90%;
 }

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import "./NavBar.css";  
+import "./navBar.css";  
 function NavBar() {
 
     const  listado = ["clase1", "clase2", "clase3", "clase4"];
@@ -19,6 +19,9 @@ function NavBar() {
             </li>
           ))}
         </ul>
+        <div className="navbar-buttons">
+          <a href="/prueba" className="navbar-button">Ir a Prueba</a>
+        </div>
       </div>
     </div>
   )

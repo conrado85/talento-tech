@@ -2,6 +2,7 @@ import Boton from "./components/boton/Boton";
 import "./App.css";
 import Tarjeta from "./components/tarjeta/Tarjeta";
 import NavBar from "./components/navbar/NavBar";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <h2>Tercera clase</h2>
         <p>Mi tercer componente</p>
       </section>
+      <Footer />
     </div>
   );
 }
